@@ -1,75 +1,74 @@
-# React + TypeScript + Vite
+# Aprova+
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Estude de graça. Aprove com Lumi.
 
-Currently, two official plugins are available:
+Plataforma gratuita de estudos para quem prepara o **ENEM** e o **ENCCEJA** e quer conquistar o certificado do ensino médio. Projeto da **Global Solution 2026/2 (FIAP), tema CitizenTech**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## O problema
 
-## React Compiler
+Muitas pessoas não concluíram o ensino médio e precisam de um caminho gratuito, acessível e organizado para estudar e conseguir o certificado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## A solução
 
-## Expanding the ESLint configuration
+- **Trilhas de estudo** em 4 áreas: Ciências da Natureza, Ciências Humanas, Português e Matemática.
+- **Exercícios gamificados** com XP, sequência de dias e níveis: Bronze, Prata, Ouro, Diamante e Platina (certificado validado por um tutor).
+- **Lumi**, a mascote vaga-lume que dá dicas e feedback.
+- **IA** que estima a chance de o aluno atingir a nota mínima em cada área.
+- **Diagnóstico inicial** e **plano de estudos** semanal.
+- **Revisão de erros** e **simulados** de ENEM e ENCCEJA.
+- **Cursos gratuitos**, com destaque para o CPOP (Rede Nacional de Cursinhos Populares do MEC).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> A chance de atingir a nota mínima é uma estimativa baseada no desempenho registrado, não uma garantia de aprovação.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tecnologias
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- React + Vite + TypeScript
+- Tailwind CSS
+- React Router
+- Fetch API
+- Deploy na Vercel
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Como rodar
 
+Requisitos: Node 20 ou superior.
+
+```bash
+git clone URL_DO_REPOSITORIO
+cd Aprova-
+npm install
+cp .env.example .env
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+O site abre em `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Variáveis de ambiente
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Variável | Para que serve |
+| --- | --- |
+| `VITE_API_URL` | Endereço da API Java (Spring Boot) |
+| `VITE_IA_URL` | Endereço da API de IA (Flask) |
+
+## Estrutura
 
 ```
+src/
+  components/   peças reutilizáveis (Navbar, Footer, Lumi...)
+  pages/        uma página por rota
+  services/     chamadas às APIs (fetch)
+  types/        tipos TypeScript
+  data/         perguntas dos exercícios e textos
+  hooks/        hooks personalizados (useFetch)
+```
+
+## Integrantes
+
+| Nome | RM | Turma | GitHub | LinkedIn |
+| --- | --- | --- | --- | --- |
+| [Nome] | [RM] | [Turma] | [link] | [link] |
+
+## Links
+
+- Site: [link da Vercel]
+- API Java: [link do Render]
+- Vídeo de apresentação: [link]
