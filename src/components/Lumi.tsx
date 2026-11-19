@@ -6,6 +6,6 @@ interface LumiProps {
 /** Mascote do projeto: um vaga-lume. */
 export default function Lumi({ tamanho = 96, className = '' }: LumiProps) {
   return (
-    <img src="/lumi.svg" alt="Lumi, o vaga-lume mascote do Aprova+" width={tamanho} height={tamanho} className={className} />
+    <img src="/Lumi.png" alt="Lumi, o vaga-lume mascote do Aprova+" width={tamanho} height={tamanho} className={className} />
   )
 }
