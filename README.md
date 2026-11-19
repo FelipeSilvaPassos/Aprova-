@@ -59,13 +59,39 @@ src/
   types/        tipos TypeScript
   data/         perguntas dos exercícios e textos
   hooks/        hooks personalizados (useFetch)
+  context/      sessão do aluno (AlunoContext)
 ```
+
+## Páginas
+
+| Rota | Página |
+| --- | --- |
+| `/` | Home |
+| `/sobre` | Sobre |
+| `/integrantes` e `/integrantes/:rm` | Integrantes (a segunda tem parâmetro) |
+| `/faq` | Perguntas frequentes |
+| `/contato` | Contato, com formulário validado |
+| `/trilhas` e `/trilhas/:licaoId` | Trilha de lições; conclui a lição na API |
+| `/cursos` | Cursos gratuitos, com filtro |
+| `/entrar` | Cadastro, entrada por matrícula e painel do aluno |
+
+## Integração com a API Java
+
+Todas as chamadas usam `fetch` e ficam em `src/services`. Loading, erro e ausência de dados são tratados pelo componente `Estado`.
+
+| Uso | Chamada |
+| --- | --- |
+| GET | `/areas`, `/materias`, `/licoes`, `/cursos`, `/parceiros`, `/alunos/matricula/{m}`, `/alunos/{id}/progressos` |
+| POST | `/alunos` (cadastro), `/alunos/{id}/progressos` (concluir lição) |
+| PUT | `/alunos/{id}/certificado` |
+| DELETE | `/alunos/{id}/progressos/{licaoId}` |
 
 ## Integrantes
 
 | Nome | RM | Turma | GitHub | LinkedIn |
 | --- | --- | --- | --- | --- |
-| [Nome] | [RM] | [Turma] | [link] | [link] |
+| Felipe Passos | RM569411 | 1TDSPO | [github.com/FelipeSilvaPassos](https://github.com/FelipeSilvaPassos) | [link] |
+| Gabriel Canevari | RM570730 | 1TDSPO | [link] | [link] |
 
 ## Links
 
