@@ -9,3 +9,13 @@
 }
 
 body { @apply bg-fundo text-marinho font-sans; }
+
+:focus-visible { outline: 3px solid var(--color-marinho); outline-offset: 2px; }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-marinho px-6 py-3 font-bold transition disabled:cursor-not-allowed disabled:opacity-60; }
+  .btn-primario { @apply bg-amarelo hover:brightness-95; }
+  .btn-secundario { @apply bg-white hover:bg-amarelo/30; }
+  .input { @apply w-full rounded-xl border-2 border-marinho bg-white px-4 py-2.5; }
+  .input-erro { @apply border-red-600; }
+}
