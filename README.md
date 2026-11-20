@@ -90,11 +90,11 @@ Todas as chamadas usam `fetch` e ficam em `src/services`. Loading, erro e ausên
 
 | Nome | RM | Turma | GitHub | LinkedIn |
 | --- | --- | --- | --- | --- |
-| Felipe Passos | RM569411 | 1TDSPO | [github.com/FelipeSilvaPassos](https://github.com/FelipeSilvaPassos) | [link] |
-| Gabriel Canevari | RM570730 | 1TDSPO | [link] | [link] |
+| Felipe Passos | RM569411 | 1TDSPO | [github.com/FelipeSilvaPassos](https://github.com/FelipeSilvaPassos) | [https://www.linkedin.com/in/felipe-passos-110668397/] |
+| Gabriel Canevari | RM570730 | 1TDSPO | [https://github.com/Canevari2] | [https://www.linkedin.com/in/gabriel-canevari-476825382/] |
 
 ## Links
 
-- Site: [link da Vercel]
-- API Java: [link do Render]
-- Vídeo de apresentação: [link]
+- Site: [https://aprova-black.vercel.app/]
+- API Java: [https://aprovamais-api.onrender.com/]
+- Vídeo de apresentação: [https://youtu.be/nA9s1-rfla0]
